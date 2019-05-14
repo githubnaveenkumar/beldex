@@ -26,8 +26,8 @@ RUN set -ex && \
 WORKDIR /usr/local
 
 #Cmake
-ARG CMAKE_VERSION=3.13.0
-ARG CMAKE_VERSION_DOT=v3.13
+ARG CMAKE_VERSION=3.12.1
+ARG CMAKE_VERSION_DOT=v3.12
 ARG CMAKE_HASH=4058b2f1a53c026564e8936698d56c3b352d90df067b195cb749a97a3d273c90 
 RUN set -ex \
     && curl -s -O https://cmake.org/files/${CMAKE_VERSION_DOT}/cmake-${CMAKE_VERSION}.tar.gz \
@@ -39,8 +39,8 @@ RUN set -ex \
     && make install
 
 ## Boost
-ARG BOOST_VERSION=1_68_0
-ARG BOOST_VERSION_DOT=1.68.0
+ARG BOOST_VERSION=1_67_0
+ARG BOOST_VERSION_DOT=1.67.0
 ARG BOOST_HASH=7f6130bc3cf65f56a618888ce9d5ea704fa10b462be126ad053e80e553d6d8b7
 RUN set -ex \
     && curl -s -L -o  boost_${BOOST_VERSION}.tar.bz2 https://dl.bintray.com/boostorg/release/${BOOST_VERSION_DOT}/source/boost_${BOOST_VERSION}.tar.bz2 \
