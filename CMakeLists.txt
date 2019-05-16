@@ -885,7 +885,8 @@ if(STATIC)
   set(Boost_USE_STATIC_RUNTIME ON)
 endif()
 
-
+BOOST_ROOT = /opt/android/boost_1_67_0
+BOOST_LIBRARYDIR = /opt/android/boost_1_67_0
 set(BOOST_LIBRARYDIR ${BOOST_ROOT}/stage/lib/)
 
 find_package(Boost 1.67 QUIET REQUIRED COMPONENTS system filesystem thread date_time chrono regex serialization program_options locale)
