@@ -884,9 +884,11 @@ if(STATIC)
   set(Boost_USE_STATIC_LIBS ON)
   set(Boost_USE_STATIC_RUNTIME ON)
 endif()
-BOOST_ROOT="/opt/android/boost_1_67_0"
-Boost_LIBRARY_DIRS="/opt/android/boost_1_67_0/.\b2"
-set(BOOST_LIBRARYDIR ${BOOST_ROOT}/stage/lib/)
+
+
+set BOOST_ROOT=/opt/android/boost_1_67_0
+set BOOST_LIBRARYDIR=/opt/android/boost_1_67_0/stage/lib
+
 find_package(Boost 1.67 QUIET REQUIRED COMPONENTS system filesystem thread date_time chrono regex serialization program_options locale)
 
 set(CMAKE_FIND_LIBRARY_SUFFIXES ${OLD_LIB_SUFFIXES})
