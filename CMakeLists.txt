@@ -885,8 +885,7 @@ if(STATIC)
   set(Boost_USE_STATIC_RUNTIME ON)
 endif()
 
-BOOST_ROOT = \opt\android\boost_1_67_0
-BOOST_LIBRARYDIR = \opt\android\boost_1_67_0
+
 set(BOOST_LIBRARYDIR ${BOOST_ROOT}/stage/lib/)
 
 
